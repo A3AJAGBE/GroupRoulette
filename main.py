@@ -14,7 +14,9 @@ name_submission = input("Submit everybody's name, separated by a comma and space
 names = name_submission.split(", ")
 
 if len(names) != num_people:
-    print('The number in the group is not a match with the names submitted')
+    print('The number of people in the group is not a match with the names submitted')
     print(f'Number of people in the group: {num_people}\nNames submitted: {names}')
 else:
-    print(names)
+    print(f'The names submitted are: {names}\n')
+    chosen = random.choice(names)
+    print(f"{chosen} is the individual for the required activity. 👏🏼👏🏼👏🏼")
